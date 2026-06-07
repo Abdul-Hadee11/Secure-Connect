@@ -5,10 +5,5 @@ dist/
 .DS_Store
 *.log
 .vercel
-README.md
-SETUP_QUICKSTART.md
-package-lock.json
-package.json
-storage.rules
-firestore.rules
+
 

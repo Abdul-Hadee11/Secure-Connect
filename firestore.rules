@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 💖 Private portal — open access since auth is handled client-side by shared password.
+    // For an extra layer, you can deploy Firebase App Check or restrict by your domain in CORS settings.
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
