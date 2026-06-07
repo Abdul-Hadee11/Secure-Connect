@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #FFFBF7 0%, #FFE4E9 50%, #FFF5EC 100%);
+  font-family: 'Quicksand', sans-serif;
+  color: #5a3a4a;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #FFF5EC; }
+::-webkit-scrollbar-thumb { background: #FFA8B6; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #F58A9C; }
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 200, 209, 0.4);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(255, 168, 182, 0.25);
+}
+
+.handwritten {
+  font-family: 'Caveat', cursive;
+}
+
+.script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.petal {
+  position: fixed;
+  top: -10vh;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #F58A9C, #E76A85);
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(231, 106, 133, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(231, 106, 133, 0.45); }
+
+.btn-soft {
+  background: white;
+  color: #C9526F;
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: 1px solid #FFC8D1;
+  transition: all 0.2s ease;
+}
+.btn-soft:hover { background: #FFE4E9; }
+
+.input-soft {
+  background: rgba(255,255,255,0.7);
+  border: 1px solid #FFC8D1;
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  font-family: 'Quicksand', sans-serif;
+  color: #5a3a4a;
+}
+.input-soft:focus { border-color: #F58A9C; box-shadow: 0 0 0 4px rgba(245,138,156,0.18); }
+
+textarea.input-soft { resize: vertical; min-height: 120px; }
+
+.tab-pill {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1.1rem; border-radius: 9999px;
+  font-weight: 600; font-size: 0.9rem;
+  background: rgba(255,255,255,0.6); color: #8E6586;
+  border: 1px solid rgba(255,200,209,0.5);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.tab-pill:hover { background: #FFE4E9; color: #C9526F; }
+.tab-pill.active { background: linear-gradient(135deg, #F58A9C, #E76A85); color: white; border-color: transparent; box-shadow: 0 6px 16px rgba(231,106,133,0.35); }
+
+.title-script {
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #E76A85, #A8506C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
